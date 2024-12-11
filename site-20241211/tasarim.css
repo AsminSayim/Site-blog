@@ -1,0 +1,87 @@
+/*Genel biçimlendirme*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;/*yazı fontunu değiştirir*/
+   
+}
+
+/*header bölümü*/
+
+body{
+    min-height: 100vh; /*view height görünen alan yüksekliği*/
+    display: flex;
+    flex-direction: column;/*içindeki nesnelerin hangi yönde yerleşecegi*/
+    font-size: 150%;
+    line-height: 1.5em;/*uzunluk birimi olarak kullanılır. 1 em, o anki elemanın yazı tipi boyutuna (font-size) eşittir.*/
+}
+
+header,footer{
+    padding-top: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+#main-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;/*içindeki flex öğeleri ortalanır*/
+}
+
+#main-menu a{
+    display: block;
+    color: #fff;
+    text-decoration: none;/*yaznın altında olan çizgiyi kaldırır*/
+    padding: 12px 10px;
+}
+
+/*orta bölüm*/
+
+main{
+    display: flex;
+    gap: 20px;/*içindeki nesneler arasında boşluk bırak */
+    padding: 20px;
+    flex: auto;/* flexbox düzeninde otomatik olarak genişlik ve yükseklik ayarlamasını sağlar.*/
+}
+
+#content{
+    background-color: #ffd900;
+    padding: 20px;
+    border: #52565e solid 1px;
+    flex: 9;
+}
+
+#content p{
+    margin-bottom: 10px;/*üstten*/
+    margin-top: 5px;/*alttan*/
+}
+
+aside{
+    background-color: #ffd900;
+    padding: 20px;
+    border: #52565e solid 1px;
+    flex: 3;
+}
+
+aside h2{
+    margin-bottom: 10px;
+}
+
+
+aside ul{
+   list-style: none;
+}
+
+
+aside a{
+    color: #000;
+    
+}
+
+footer{
+    padding-bottom: 30px;
+}
+
