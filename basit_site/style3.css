@@ -1,0 +1,203 @@
+/* Genel sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body ve genel stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Hero Bölümü */
+.hero {
+    background: url('https://via.placeholder.com/1600x800') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    min-height: 600px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Hizmetler Bölümü */
+.services {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Hakkımızda Bölümü */
+.about {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* İletişim Bölümü */
+.contact {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,162 @@
+/* Genel sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sayfa genel stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Hero Bölümü */
+.hero {
+    background-color: #ff6600;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #ff6600;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Kod Örnekleri */
+.section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.code-box {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+pre {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 16px;
+}
+
+.example-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero .btn {
+        padding: 12px 25px;
+    }
+}
