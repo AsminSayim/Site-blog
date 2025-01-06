@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.top-bar {
+    background-color: #ff5722;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo img {
+    height: 50px;
+}
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.main-nav ul li {
+    margin: 0 10px;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.main-nav ul li a:hover {
+    background-color: #e64a19;
+}
+.main-nav ul li.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.highlighted {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #eee;
+}
+.highlight {
+    text-align: center;
+    margin: 0 10px;
+}
+.highlight img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+.content {
+    padding: 20px;
+}
+.category {
+    margin-bottom: 20px;
+}
+.category h2 {
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.card img {
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
