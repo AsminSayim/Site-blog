@@ -1,0 +1,97 @@
+*{
+    margin: 0; /*dış boşlukları sıfırla*/
+    padding: 0; /*iç boşlukları sıfırla*/
+    box-sizing: border-box; /*kutu genişlik ve yüksekliğini border'a kadar belirler*/
+}
+body{
+    background-image: url(../img/fresh-spring-background.jpg);
+    background-size: cover; /*resmin ekranı kaplaması için cover kullanılır */
+    /*min-height: 100vh;*/
+
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+#logo{
+    text-align: center;
+    padding: 24px;
+}
+
+#logo img{
+    width: 150px;
+}
+
+.container{
+    margin: auto;
+    width: 70% ;
+}
+
+#menu{
+    background-color: #fff;
+    box-shadow: 0 0 5px gray; /*bir elemente gölge efekti eklemek için kullanılır.*/
+    /*height: 60px;*/
+}
+
+#menu ul{
+    display:flex;
+    justify-content: space-around; /* Öğeler arasındaki boşluğu eşit dağıtarak, her bir öğenin etrafında eşit miktarda boşluk bırakır. */
+    list-style-type: none; /*<ul>, <ol>) işaretçilerini (noktalar, numaralar vb.) kaldırır.*/
+}
+
+#menu a{
+    text-decoration: none; /*metnin altını çizme, üstünü çizme veya diğer dekoratif çizgileri kaldırır. */
+    color: #e66c06;
+    padding: 10px;
+    display: inline-block;
+    transition: 1s; /*gecikme süresini ekler*/
+}
+
+
+#menu a:hover{
+    background-color: #e66c06;
+    color: white;
+    transition: 1s; /*gecikme süresini ekler*/
+}
+
+.banner{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.urunler{
+    display: flex;
+    gap: 24px;
+}
+
+.urun{
+    flex: 1; /*urun sınıfına ait divlerin aynı genişlikte olmasını sağlar*/
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: 0 0 5px gray;
+    text-align: center;
+}
+
+.urun img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /*bir öğenin (genellikle bir resim veya video) kapsayıcı alanını tamamen dolduracak şekilde boyutlandırılmasını sağlar. */
+}
+
+
+footer {
+    margin-top: 20px 0px;
+    display: flex;
+    justify-content: space-between; /* Sol ve sağdaki içerikleri ayırır */
+    padding: 5px;
+    background-color: #ffffff92;
+    box-shadow: 0 0 5px gray;
+}
+
+.sag{
+    color: green;
+}
+
+.sol{
+    color: #e66c06;
+}
+

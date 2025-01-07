@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    min-height: 100vh; /*view height görünen alan yüksekliği*/
+    display: flex;
+    flex-direction: column;/*içindeki nesnelerin hangi yönde yerleşecegi*/
+    font-size: 100%;
+    line-height: 1.5em;
+  
+}
+#isim{
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.container{
+    background-color: #222;
+    margin: 60px auto;
+    box-sizing: 960px;
+}
+
+.banner{
+    text-align: center;
+    margin: 10px; 
+}
+
+.resim img{
+
+    border: solid  #fff  10px;
+    border-radius:10px;
+    object-fit: cover;
+}
+
+#main-menu{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#menu a{
+    text-decoration: none; /*metnin altını çizme, üstünü çizme veya diğer dekoratif çizgileri kaldırır. */
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+}
+
+footer{
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    margin: 20px;
+}
+

@@ -1,152 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Master</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #343a40;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin: 0 5px;
-            background-color: #007bff;
-            border-radius: 4px;
-        }
-        nav a:hover {
-            background-color: #0056b3;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        .card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-        .card-content {
-            padding: 15px;
-        }
-        .card-content h3 {
-            margin: 0 0 10px;
-            color: #007bff;
-        }
-        .card-content p {
-            margin: 0 0 10px;
-        }
-        .card-content a {
-            display: inline-block;
-            margin-top: 10px;
-            color: white;
-            background-color: #007bff;
-            padding: 8px 12px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
-        .card-content a:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #343a40;
-            color: white;
-            margin-top: 20px;
-        }
-        .code-page {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .code-page h2 {
-            color: #007bff;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .code-page pre {
-            background-color: #f4f4f4;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
+    <title>Code Master - Kodlama Dilleri</title>
+    <link rel="stylesheet" href="tasarim.css"> <!-- CSS dosyasını bağlayın -->
 </head>
 <body>
     <header>
-        <h1>Welcome to Code Master</h1>
-        <p>Your one-stop resource for programming tutorials and examples!</p>
+        <h1>Code Master</h1>
+        <p>Farklı kodlama dillerine dair bilgiler ve kaynaklar.</p>
     </header>
     <nav>
-        <a href="index.html">Home</a>
         <a href="python.html">Python</a>
         <a href="javascript.html">JavaScript</a>
-        <a href="java.html">Java</a>
-        <a href="csharp.html">C#</a>
+        <a href="#java">Java</a>
+        <a href="#csharp">C#</a>
+        <a href="#php">PHP</a>
+        <a href="#ruby">Ruby</a>
+        <a href="#go">Go</a>
+        <a href="#swift">Swift</a>
+        <a href="#c">C</a>
+        <a href="#cpp">C++</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
     </nav>
     <div class="container">
-        <div class="card">
-            <img src="https://via.placeholder.com/300x150" alt="Python">
+        <div class="card" id="python">
+            <img src="calisma/ornek1.png" alt="Form Örneği">
             <div class="card-content">
-                <h3>Python Tutorials</h3>
-                <p>Explore Python examples and learn the basics of programming in Python.</p>
-                <a href="python.html">Learn More</a>
+                <h3>HTML Form Kullanıı</h3>
+                <p>Bu uygulamada html form ile çalışma yapıldı.</p>
+                <a href="calisma/241225/iletisim.html">Uygulama</a>
             </div>
         </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x150" alt="JavaScript">
+        <div class="card" >
+            <img src="calisma/ornek2.png" alt="Lipton Site Örneği">
             <div class="card-content">
-                <h3>JavaScript Tutorials</h3>
-                <p>Master JavaScript and build dynamic, interactive web applications.</p>
-                <a href="javascript.html">Learn More</a>
+                <h3>Lipton Site Tasarımı</h3>
+                <p>JavaScript, web geliştirme için önemli bir programlama dilidir.</p>
+                <a href="calisma/lipton-241218/index.html">Learn More</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="java">
             <img src="https://via.placeholder.com/300x150" alt="Java">
             <div class="card-content">
-                <h3>Java Tutorials</h3>
-                <p>Learn Java programming with practical examples and explanations.</p>
-                <a href="java.html">Learn More</a>
+                <h3>Java</h3>
+                <p>Java, platform bağımsız uygulamalar geliştirmeye olanak tanır.</p>
+                <a href="https://www.oracle.com/java/">Learn More</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="csharp">
             <img src="https://via.placeholder.com/300x150" alt="C#">
             <div class="card-content">
-                <h3>C# Tutorials</h3>
-                <p>Get started with C# and develop powerful applications with ease.</p>
-                <a href="csharp.html">Learn More</a>
+                <h3>C#</h3>
+                <p>C#, Microsoft'un geliştirdiği güçlü bir programlama dilidir.</p>
+                <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">Learn More</a>
+            </div>
+        </div>
+        <div class="card" id="php">
+            <img src="https://via.placeholder.com/300x150" alt="PHP">
+            <div class="card-content">
+                <h3>PHP</h3>
+                <p>PHP, dinamik web sayfaları geliştirmek için kullanılan popüler bir dildir.</p>
+                <a href="https://www.php.net/">Learn More</a>
+            </div>
+        </div>
+        <div class="card" id="ruby">
+            <img src="https://via.placeholder.com/300x150" alt="Ruby">
+            <div class="card-content">
+                <h3>Ruby</h3>
+                <p>Ruby, çok yönlü bir programlama dili olup özellikle web uygulamaları için kullanılır.</p>
+                <a href="https://www.ruby-lang.org/en/">Learn More</a>
+            </div>
+        </div>
+        <div class="card" id="go">
+            <img src="https://via.placeholder.com/300x150" alt="Go">
+            <div class="card-content">
+                <h3>Go</h3>
+                <p>Go, Google tarafından geliştirilen hızlı ve verimli bir programlama dilidir.</p>
+                <a href="https://golang.org/">Learn More</a>
+            </div>
+        </div>
+        <div class="card" id="swift">
+            <img src="https://via.placeholder.com/300x150" alt="Swift">
+            <div class="card-content">
+                <h3>Swift</h3>
+                <p>Swift, Apple tarafından iOS ve macOS uygulamaları için geliştirilen bir dildir.</p>
+                <a href="https://developer.apple.com/swift/">Learn More</a>
+            </div>
+        </div>
+        <div class="card" id="c">
+            <img src="https://via.placeholder.com/300x150" alt="C">
+            <div class="card-content">
+                <h3>C</h3>
+                <p>C, sistem yazılımları ve uygulama geliştirme için kullanılan eski ama güçlü bir dildir.</p>
+                <a href="https://www.gnu.org/software/cc/">Learn More</a>
+            </div>
+        </div>
+        <div class="card" id="cpp">
+            <img src="https://via.placeholder.com/300x150" alt="C++">
+            <div class="card-content">
+                <h3>C++</h3>
+                <p>C++, C diline dayalı ve nesne yönelimli programlama özellikleri sunan bir dildir.</p>
+                <a href="https://isocpp.org/">Learn More</a>
+            </div>
+        </div>
+        <div class="card" id="html">
+            <img src="https://via.placeholder.com/300x150" alt="HTML">
+            <div class="card-content">
+                <h3>HTML</h3>
+                <p>HTML, web sayfalarını yapısal olarak tanımlayan bir işaretleme dilidir.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Learn More</a>
+            </div>
+        </div>
+        <div class="card" id="css">
+            <img src="https://via.placeholder.com/300x150" alt="CSS">
+            <div class="card-content">
+                <h3>CSS</h3>
+                <p>CSS, web sayfalarının stilini tanımlamak için kullanılan bir dildir.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Learn More</a>
             </div>
         </div>
     </div>
     <footer>
-        <p>&copy; 2025 Code Master. All rights reserved.</p>
+        <p>&copy; 2025 Code Master. Tüm hakları saklıdır.</p>
     </footer>
 </body>
 </html>
